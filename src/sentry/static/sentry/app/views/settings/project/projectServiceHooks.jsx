@@ -11,6 +11,7 @@ import {
 import {t} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
+import {IconWarning} from 'app/icons';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import Field from 'app/views/settings/components/forms/field';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -113,7 +114,7 @@ export default class ProjectServiceHooks extends AsyncView {
       <React.Fragment>
         <PanelHeader key="header">{t('Service Hook')}</PanelHeader>
         <PanelBody key="body">
-          <PanelAlert type="info" icon="icon-circle-exclamation">
+          <PanelAlert type="info" icon={<IconWarning />}>
             Service Hooks are an early adopter preview feature and will change in the
             future.
           </PanelAlert>

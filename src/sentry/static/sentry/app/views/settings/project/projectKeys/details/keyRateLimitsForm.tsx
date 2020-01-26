@@ -7,6 +7,7 @@ import {ProjectKey} from 'app/views/settings/project/projectKeys/types';
 import {t} from 'app/locale';
 import Feature from 'app/components/acl/feature';
 import FeatureDisabled from 'app/components/acl/featureDisabled';
+import {IconWarning} from 'app/icons';
 import Form from 'app/views/settings/components/forms/form';
 import FormField from 'app/views/settings/components/forms/formField';
 import InputControl from 'app/views/settings/components/forms/controls/input';
@@ -89,7 +90,7 @@ class KeyRateLimitsForm extends React.Component<Props> {
               <PanelHeader>{t('Rate Limits')}</PanelHeader>
 
               <PanelBody>
-                <PanelAlert type="info" icon="icon-circle-exclamation">
+                <PanelAlert type="info" icon={<IconWarning />}>
                   {t(
                     `Rate limits provide a flexible way to manage your event
                       volume. If you have a noisy project or environment you

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import InlineSvg from 'app/components/inlineSvg';
+import {IconClose, IconQuestion, IconWarning} from 'app/icons';
 import space from 'app/styles/space';
 
 /* styles common to the guide and support cue/drawer. */
@@ -31,20 +32,14 @@ type CueIconProps = React.ComponentPropsWithoutRef<typeof InlineSvg> & {
   hasGuide: boolean;
 };
 
-const CueIcon = styled(({hasGuide, ...props}: CueIconProps) => (
-  <InlineSvg
-    src={hasGuide ? 'icon-circle-exclamation' : 'icon-circle-question'}
-    {...props}
-  />
-))`
+const CueIcon = styled(({hasGuide, ...props}: CueIconProps) =>
+  hasGuide ? <IconWarning {...props} /> : <IconQuestion {...props} />
+)`
   width: 1.33em;
   height: 1.33em;
 `;
 
-const CloseIcon = styled(props => <InlineSvg src="icon-close-lg" {...props} />)`
-  stroke-width: 3px;
-  width: 0.75em;
-  height: 0.75em;
+const CloseIcon = styled(props => <IconClose {...props} />)`
   margin: 0 0 0 ${space(1.5)};
   cursor: pointer;
 `;

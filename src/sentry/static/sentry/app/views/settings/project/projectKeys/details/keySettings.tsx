@@ -16,6 +16,7 @@ import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
 import DateTime from 'app/components/dateTime';
 import ExternalLink from 'app/components/links/externalLink';
+import {IconWarning} from 'app/icons';
 import Field from 'app/views/settings/components/forms/field';
 import Form from 'app/views/settings/components/forms/form';
 import KeyRateLimitsForm from 'app/views/settings/project/projectKeys/details/keyRateLimitsForm';
@@ -169,7 +170,7 @@ class KeySettings extends React.Component<Props, State> {
             <Panel>
               <PanelHeader>{t('Credentials')}</PanelHeader>
               <PanelBody>
-                <PanelAlert type="info" icon="icon-circle-exclamation">
+                <PanelAlert type="info" icon={<IconWarning />}>
                   {t(
                     'Your credentials are coupled to a public and secret key. Different clients will require different credentials, so make sure you check the documentation before plugging things in.'
                   )}

@@ -7,9 +7,9 @@ import {t, tct} from 'app/locale';
 import UserAvatar from 'app/components/avatar/userAvatar';
 import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
-import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
+import {IconCheckmark, IconMail, IconWarning} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import recreateRoute from 'app/utils/recreateRoute';
@@ -110,7 +110,7 @@ export default class OrganizationMemberRow extends React.PureComponent {
         <div data-test-id="member-role">
           {pending ? (
             <InvitedRole>
-              <InlineSvg src="icon-mail" size="1.2em" />
+              <IconMail />
               {expired ? t('Expired Invite') : tct('Invited [roleName]', {roleName})}
             </InvitedRole>
           ) : (
@@ -259,10 +259,6 @@ const LoadingContainer = styled('div')`
 `;
 
 const AuthStatus = styled(Section)``;
-const AuthIcon = styled(p => (
-  <InlineSvg {...p} src={p.has2fa ? 'icon-circle-check' : 'icon-circle-exclamation'} />
-))`
+const AuthIcon = styled(p => (p.has2fa ? <IconCheckmark circle /> : <IconWarning />))`
   color: ${p => (p.has2fa ? p.theme.success : p.theme.error)};
-  font-size: 18px;
-  margin-bottom: 1px;
 `;

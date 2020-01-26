@@ -12,7 +12,7 @@ type Priority = 'info' | 'warning' | 'success' | 'error' | 'muted';
 type PropsWithHref = {href: string};
 type PropsWithTo = {to: LocationDescriptor};
 type OtherProps = {
-  icon?: string | object;
+  icon?: object;
   size: Size;
   priority: Priority;
   onClick?: (e: React.MouseEvent) => void;

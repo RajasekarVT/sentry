@@ -5,9 +5,9 @@ import posed from 'react-pose';
 import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
-import InlineSvg from 'app/components/inlineSvg';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import testablePose from 'app/utils/testablePose';
+import {IconCheckmark, IconClose} from 'app/icons';
 
 const transition = {
   type: 'spring',
@@ -89,9 +89,9 @@ function ToastIndicator({indicator, onDismiss, className, ...props}) {
   };
 
   if (type === 'success') {
-    icon = <InlineSvg src="icon-circle-check" size="24px" />;
+    icon = <IconCheckmark size="md" circle />;
   } else if (type === 'error') {
-    icon = <InlineSvg src="icon-circle-close" size="24px" />;
+    icon = <IconClose size="md" circle />;
   }
 
   // TODO(billy): Remove ref- className after removing usage from getsentry

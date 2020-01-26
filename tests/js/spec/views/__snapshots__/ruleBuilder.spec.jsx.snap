@@ -822,8 +822,8 @@ exports[`RuleBuilder renders 1`] = `
                                         onClick={[Function]}
                                         size="zero"
                                       >
-                                        <ForwardRef(render)
-                                          src="icon-circle-add"
+                                        <IconAdd
+                                          circle={true}
                                         />
                                       </ForwardRef(render)>
                                     </Tooltip>
@@ -2398,8 +2398,8 @@ exports[`RuleBuilder renders with suggestions 1`] = `
                                         onClick={[Function]}
                                         size="zero"
                                       >
-                                        <ForwardRef(render)
-                                          src="icon-circle-add"
+                                        <IconAdd
+                                          circle={true}
                                         />
                                       </ForwardRef(render)>
                                     </Tooltip>
