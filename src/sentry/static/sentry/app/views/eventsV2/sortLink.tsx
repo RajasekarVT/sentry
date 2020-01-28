@@ -5,7 +5,7 @@ import {Location} from 'history';
 import omit from 'lodash/omit';
 
 import Link from 'app/components/links/link';
-import {IconChevron} from 'app/icons';
+import {IconArrow} from 'app/icons';
 
 import EventView, {Field, Sort, isFieldSortable} from './eventView';
 import {MetaType} from './utils';
@@ -61,10 +61,10 @@ class SortLink extends React.Component<Props> {
     }
 
     if (currentSort.kind === 'desc') {
-      return <IconChevron direction="down" />;
+      return <IconArrow direction="down" size="xs" />;
     }
 
-    return <IconChevron direction="up" />;
+    return <IconArrow direction="up" size="xs" />;
   }
 
   render() {
