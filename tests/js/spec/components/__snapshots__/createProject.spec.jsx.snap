@@ -15,6 +15,11 @@ exports[`CreateProject should block if you have access to no teams 1`] = `
                your organization. For example, you might have separate projects
                for your API server and frontend client.
     </HelpText>
+    <PageHeading
+      withMargins={true}
+    >
+      Choose a platform
+    </PageHeading>
     <PlatformPicker
       platform=""
       setPlatform={[Function]}
@@ -158,6 +163,15 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                for your API server and frontend client.
       </p>
     </HelpText>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Choose a platform
+      </h1>
+    </PageHeading>
     <PlatformPicker
       platform=""
       setPlatform={[Function]}
@@ -1743,6 +1757,15 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                for your API server and frontend client.
       </p>
     </HelpText>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Choose a platform
+      </h1>
+    </PageHeading>
     <PlatformPicker
       platform="ruby"
       setPlatform={[Function]}
@@ -2739,6 +2762,15 @@ exports[`CreateProject should fill in project name if its empty when platform is
                for your API server and frontend client.
       </p>
     </HelpText>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Choose a platform
+      </h1>
+    </PageHeading>
     <PlatformPicker
       platform="csharp"
       setPlatform={[Function]}

@@ -136,6 +136,10 @@ class CreateProject extends React.Component {
           <PageHeading withMargins>{t('Choose a platform')}</PageHeading>
           {/*TODO(jeff): End guard with feature flag*/}
           <PlatformPicker platform={platform} setPlatform={this.setPlatform} showOther />
+          {/*TODO(jeff): Guard with feature flag*/}
+          {/*TODO(?): Pixel push margins*/}
+          <PageHeading withMargins>{t('Set your default alert settings')}</PageHeading>
+          {/*TODO(jeff): End guard with feature flag*/}
           <CreateProjectForm onSubmit={this.createProject}>
             <div>
               <FormLabel>{t('Give your project a name')}</FormLabel>
