@@ -25,6 +25,11 @@ exports[`CreateProject should block if you have access to no teams 1`] = `
       setPlatform={[Function]}
       showOther={true}
     />
+    <PageHeading
+      withMargins={true}
+    >
+      Set your default alert settings
+    </PageHeading>
     <CreateProjectForm
       onSubmit={[Function]}
     >
@@ -1239,6 +1244,15 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
         </div>
       </PlatformList>
     </PlatformPicker>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Set your default alert settings
+      </h1>
+    </PageHeading>
     <CreateProjectForm
       onSubmit={[Function]}
     >
@@ -2244,6 +2258,15 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
         </div>
       </PlatformList>
     </PlatformPicker>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Set your default alert settings
+      </h1>
+    </PageHeading>
     <CreateProjectForm
       onSubmit={[Function]}
     >
@@ -3949,6 +3972,15 @@ exports[`CreateProject should fill in project name if its empty when platform is
         </div>
       </PlatformList>
     </PlatformPicker>
+    <PageHeading
+      withMargins={true}
+    >
+      <h1
+        className="css-uisydj-PageHeading e1bz0f4q0"
+      >
+        Set your default alert settings
+      </h1>
+    </PageHeading>
     <CreateProjectForm
       onSubmit={[Function]}
     >
