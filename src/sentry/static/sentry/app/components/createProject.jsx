@@ -130,7 +130,11 @@ class CreateProject extends React.Component {
                for your API server and frontend client.`
             )}
           </HelpText>
-
+          {/*Is there a constraint layout for react?*/}
+          {/*TODO(jeff): Guard with feature flag*/}
+          {/*TODO(?): Pixel push margins*/}
+          <PageHeading withMargins>{t('Choose a platform')}</PageHeading>
+          {/*TODO(jeff): End guard with feature flag*/}
           <PlatformPicker platform={platform} setPlatform={this.setPlatform} showOther />
           <CreateProjectForm onSubmit={this.createProject}>
             <div>
